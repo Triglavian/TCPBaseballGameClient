@@ -10,12 +10,12 @@ MenuPrinter::~MenuPrinter()
 	
 }
 
-void MenuPrinter::PrintMainMenu()
+void MenuPrinter::PrintMainMenu()	//print main menu
 {
 	std::cout << msg.mainMenu;	
 }
 
-void MenuPrinter::PrintRegistrationMenu(const int& index)
+void MenuPrinter::PrintRegistrationMenu(const int& index)	//print registration menu announce message
 {
 	if (index > msg.registrationMenu.size() - 1 || index < 0) 
 	{
@@ -25,7 +25,7 @@ void MenuPrinter::PrintRegistrationMenu(const int& index)
 	std::cout << msg.registrationMenu[index] << std::endl;
 }
 
-void MenuPrinter::PrintLoginMenu(const int& index)
+void MenuPrinter::PrintLoginMenu(const int& index)	//print log in menu announce message
 {
 	if (index > msg.registrationMenu.size() - 1 || index < 0)
 	{
@@ -35,7 +35,7 @@ void MenuPrinter::PrintLoginMenu(const int& index)
 	std::cout << msg.loginMenu[index] << std::endl;
 }
 
-void MenuPrinter::PrintLoginResult(const int& index)
+void MenuPrinter::PrintLoginResult(const int& index)	//print log in result
 {
 	std::cout << msg.login[index] << std::endl;
 }
